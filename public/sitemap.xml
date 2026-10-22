@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url><loc>https://daveasolutions.com/en</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+    <url><loc>https://daveasolutions.com/ro</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+    <url><loc>https://daveasolutions.com/de</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+    <url><loc>https://daveasolutions.com/es</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+
+    <url><loc>https://daveasolutions.com/en/services</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://daveasolutions.com/ro/services</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://daveasolutions.com/de/services</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://daveasolutions.com/es/services</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+    <url><loc>https://daveasolutions.com/en/process</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://daveasolutions.com/ro/process</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://daveasolutions.com/de/process</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://daveasolutions.com/es/process</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+    <url><loc>https://daveasolutions.com/en/portfolio</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://daveasolutions.com/ro/portfolio</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://daveasolutions.com/de/portfolio</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://daveasolutions.com/es/portfolio</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+    <url><loc>https://daveasolutions.com/en/about</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://daveasolutions.com/ro/about</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://daveasolutions.com/de/about</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://daveasolutions.com/es/about</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+    <url><loc>https://daveasolutions.com/en/contact</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://daveasolutions.com/ro/contact</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://daveasolutions.com/de/contact</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://daveasolutions.com/es/contact</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+</urlset>

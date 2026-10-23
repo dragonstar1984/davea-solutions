@@ -98,7 +98,7 @@ class ContactRequestController extends Controller
             'status' => 'new',
         ]);
 
-        Mail::to('contact@davea.ro')
+        Mail::to('contact@daveasolutions.com')
             ->send(new NewContactRequest($contactRequest));
 
         return back()->with(

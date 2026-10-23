@@ -20,7 +20,7 @@ const translations = {
             ['5. Client materials', 'You are responsible for ensuring that any content, documents, data or software you provide may legally be used for the requested project.'],
             ['6. External links and services', 'The website may link to external websites or projects. DAVEA Solutions is not responsible for the content, availability or policies of external services.'],
             ['7. Limitation of liability', 'We take reasonable steps to keep the website useful and available, but we do not guarantee uninterrupted operation or that the website will be free of all errors.'],
-            ['8. Contact', 'For questions about these terms, contact Stoean Dragos at contact@davea.ro.'],
+            ['8. Contact', 'For questions about these terms, contact Stoean Dragos at contact@daveasolutions.com.'],
             ['9. Changes', 'These terms may be updated when the website, services or legal requirements change. The current version will be published on this page.'],
         ],
         footer: 'Software solutions built around your ideas.',
@@ -39,7 +39,7 @@ const translations = {
             ['5. Materialele clientului', 'Ești responsabil să te asiguri că orice conținut, document, date sau software furnizat poate fi folosit legal pentru proiectul solicitat.'],
             ['6. Linkuri și servicii externe', 'Website-ul poate include linkuri către site-uri sau proiecte externe. DAVEA Solutions nu este responsabil pentru conținutul, disponibilitatea sau politicile serviciilor externe.'],
             ['7. Limitarea răspunderii', 'Luăm măsuri rezonabile pentru ca website-ul să fie util și disponibil, dar nu garantăm funcționarea neîntreruptă sau lipsa tuturor erorilor.'],
-            ['8. Contact', 'Pentru întrebări despre acești termeni, îl poți contacta pe Stoean Dragos la contact@davea.ro.'],
+            ['8. Contact', 'Pentru întrebări despre acești termeni, îl poți contacta pe Stoean Dragos la contact@daveasolutions.com.'],
             ['9. Modificări', 'Acești termeni pot fi actualizați atunci când se schimbă website-ul, serviciile sau cerințele legale. Versiunea actuală va fi publicată pe această pagină.'],
         ],
         footer: 'Soluții software construite în jurul ideilor tale.',
@@ -58,7 +58,7 @@ const translations = {
             ['5. Materialien des Kunden', 'Sie sind dafür verantwortlich, dass von Ihnen bereitgestellte Inhalte, Dokumente, Daten oder Software rechtmäßig verwendet werden dürfen.'],
             ['6. Externe Links und Dienste', 'Die Website kann auf externe Websites oder Projekte verweisen. DAVEA Solutions ist nicht für Inhalte, Verfügbarkeit oder Richtlinien externer Dienste verantwortlich.'],
             ['7. Haftungsbeschränkung', 'Wir bemühen uns um eine nützliche und verfügbare Website, garantieren jedoch keinen ununterbrochenen Betrieb oder Fehlerfreiheit.'],
-            ['8. Kontakt', 'Fragen zu diesen Bedingungen können Sie an Stoean Dragos unter contact@davea.ro richten.'],
+            ['8. Kontakt', 'Fragen zu diesen Bedingungen können Sie an Stoean Dragos unter contact@daveasolutions.com richten.'],
             ['9. Änderungen', 'Diese Bedingungen können bei Änderungen der Website, Leistungen oder gesetzlichen Anforderungen aktualisiert werden.'],
         ],
         footer: 'Softwarelösungen rund um Ihre Ideen.',
@@ -77,7 +77,7 @@ const translations = {
             ['5. Materiales del cliente', 'Eres responsable de garantizar que cualquier contenido, documento, dato o software que proporciones pueda utilizarse legalmente.'],
             ['6. Enlaces y servicios externos', 'El sitio puede enlazar con sitios o proyectos externos. DAVEA Solutions no responde por su contenido, disponibilidad o políticas.'],
             ['7. Limitación de responsabilidad', 'Tomamos medidas razonables para mantener el sitio disponible, pero no garantizamos un funcionamiento ininterrumpido o libre de errores.'],
-            ['8. Contacto', 'Para preguntas sobre estos términos, contacta con Stoean Dragos en contact@davea.ro.'],
+            ['8. Contacto', 'Para preguntas sobre estos términos, contacta con Stoean Dragos en contact@daveasolutions.com.'],
             ['9. Cambios', 'Estos términos pueden actualizarse cuando cambien el sitio, los servicios o los requisitos legales.'],
         ],
         footer: 'Soluciones de software construidas alrededor de tus ideas.',
@@ -215,8 +215,8 @@ const languages = [
                             }}
                         </a>
                         <span class="text-slate-600">|</span>
-                        <a href="mailto:contact@davea.ro" class="transition hover:text-white">
-                            contact@davea.ro
+                        <a href="mailto:contact@daveasolutions.com" class="transition hover:text-white">
+                            contact@daveasolutions.com
                         </a>
                     </div>
                 </div>

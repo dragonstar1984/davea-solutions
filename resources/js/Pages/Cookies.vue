@@ -16,7 +16,7 @@ const translations = {
             ['4. Analytics and marketing', 'Optional analytics, advertising or marketing cookies are not required for the basic operation of this website. If they are introduced, the relevant information and consent options will be updated before they are used where required.'],
             ['5. Managing cookies', 'You can manage or delete cookies through your browser settings. Blocking necessary cookies may affect the functionality or security of the website.'],
             ['6. Updates', 'This policy may be updated when the website, technologies or legal requirements change.'],
-            ['7. Contact', 'For questions about cookies, contact Stoean Dragos at contact@davea.ro.'],
+            ['7. Contact', 'For questions about cookies, contact Stoean Dragos at contact@daveasolutions.com.'],
         ],
         footer: 'Software solutions built around your ideas.',
     },
@@ -30,7 +30,7 @@ const translations = {
             ['4. Analiză și marketing', 'Cookie-urile opționale de analiză, publicitate sau marketing nu sunt necesare pentru funcționarea de bază a website-ului. Dacă vor fi introduse, vom actualiza informarea și opțiunile de consimțământ înainte de utilizare, atunci când acestea sunt necesare.'],
             ['5. Gestionarea cookie-urilor', 'Poți gestiona sau șterge cookie-urile din setările browserului. Blocarea cookie-urilor necesare poate afecta funcționarea sau securitatea website-ului.'],
             ['6. Actualizări', 'Această politică poate fi actualizată atunci când se schimbă website-ul, tehnologiile sau cerințele legale.'],
-            ['7. Contact', 'Pentru întrebări despre cookie-uri, îl poți contacta pe Stoean Dragos la contact@davea.ro.'],
+            ['7. Contact', 'Pentru întrebări despre cookie-uri, îl poți contacta pe Stoean Dragos la contact@daveasolutions.com.'],
         ],
         footer: 'Soluții software construite în jurul ideilor tale.',
     },
@@ -44,7 +44,7 @@ const translations = {
             ['4. Analyse und Marketing', 'Optionale Analyse-, Werbe- oder Marketing-Cookies sind für die grundlegende Funktion der Website nicht erforderlich. Bei ihrer Einführung werden die Informationen und Einwilligungsoptionen entsprechend aktualisiert.'],
             ['5. Cookie-Verwaltung', 'Sie können Cookies über die Einstellungen Ihres Browsers verwalten oder löschen. Das Blockieren notwendiger Cookies kann Funktionen oder Sicherheit beeinträchtigen.'],
             ['6. Änderungen', 'Diese Richtlinie kann bei Änderungen der Website, Technologien oder gesetzlichen Anforderungen aktualisiert werden.'],
-            ['7. Kontakt', 'Fragen zu Cookies richten Sie bitte an Stoean Dragos unter contact@davea.ro.'],
+            ['7. Kontakt', 'Fragen zu Cookies richten Sie bitte an Stoean Dragos unter contact@daveasolutions.com.'],
         ],
         footer: 'Softwarelösungen rund um Ihre Ideen.',
     },
@@ -58,7 +58,7 @@ const translations = {
             ['4. Análisis y marketing', 'Las cookies opcionales de análisis, publicidad o marketing no son necesarias para el funcionamiento básico. Si se introducen, se actualizarán la información y las opciones de consentimiento cuando sea necesario.'],
             ['5. Gestión de cookies', 'Puedes gestionar o eliminar las cookies desde la configuración del navegador. Bloquear las cookies necesarias puede afectar al funcionamiento o la seguridad del sitio.'],
             ['6. Actualizaciones', 'Esta política puede actualizarse cuando cambien el sitio, las tecnologías o los requisitos legales.'],
-            ['7. Contacto', 'Para preguntas sobre cookies, contacta con Stoean Dragos en contact@davea.ro.'],
+            ['7. Contacto', 'Para preguntas sobre cookies, contacta con Stoean Dragos en contact@daveasolutions.com.'],
         ],
         footer: 'Soluciones de software construidas alrededor de tus ideas.',
     },
@@ -72,6 +72,6 @@ const languages = [{ code: 'en', label: 'EN' }, { code: 'ro', label: 'RO' }, { c
     <div class="min-h-screen bg-slate-100 text-slate-950">
         <header class="border-b border-white/10 bg-[#07111f] text-white"><div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-8"><a :href="`/${locale}`" class="text-lg font-black tracking-tight">DAVEA<span class="text-blue-400">.</span> <span class="text-slate-300">Solutions</span></a><div class="flex items-center gap-3"><div class="flex items-center gap-1 rounded-xl border border-white/10 bg-white/5 p-1"><a v-for="language in languages" :key="language.code" :href="`/${language.code}/cookies`" :class="['rounded-lg px-2.5 py-1.5 text-[11px] font-black transition', locale === language.code ? 'bg-blue-500 text-white' : 'text-slate-400 hover:text-white']">{{ language.label }}</a></div><a :href="`/${locale}/contact`" class="hidden rounded-xl bg-blue-500 px-5 py-3 text-sm font-black text-white transition hover:bg-blue-400 sm:block">{{ content.contact }}</a></div></div></header>
         <main class="mx-auto max-w-4xl px-6 py-16 lg:px-8 lg:py-24"><a :href="`/${locale}`" class="font-bold text-blue-600 hover:text-blue-500">← {{ content.back }}</a><article class="mt-10 rounded-3xl bg-white p-7 shadow-sm sm:p-12"><p class="text-xs font-black uppercase tracking-[0.25em] text-blue-600">DAVEA Solutions</p><h1 class="mt-4 text-4xl font-black tracking-tight sm:text-5xl">{{ content.title }}</h1><p class="mt-6 text-lg leading-8 text-slate-600">{{ content.intro }}</p><div class="mt-12 space-y-10 text-slate-700"><section v-for="section in content.sections" :key="section[0]"><h2 class="text-2xl font-black text-slate-950">{{ section[0] }}</h2><p class="mt-3 leading-7">{{ section[1] }}</p></section></div><p class="mt-12 border-t border-slate-200 pt-6 text-sm font-semibold text-slate-500">{{ content.updated }}</p></article></main>
-        <footer class="border-t border-white/10 bg-[#07111f] text-slate-400"><div class="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm sm:flex-row sm:items-center sm:justify-between lg:px-8"><div><p class="font-black text-white">DAVEA<span class="text-blue-400">.</span> Solutions</p><p class="mt-1">{{ content.footer }}</p></div><a href="mailto:contact@davea.ro" class="transition hover:text-white">contact@davea.ro</a></div></footer>
+        <footer class="border-t border-white/10 bg-[#07111f] text-slate-400"><div class="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm sm:flex-row sm:items-center sm:justify-between lg:px-8"><div><p class="font-black text-white">DAVEA<span class="text-blue-400">.</span> Solutions</p><p class="mt-1">{{ content.footer }}</p></div><a href="mailto:contact@daveasolutions.com" class="transition hover:text-white">contact@daveasolutions.com</a></div></footer>
     </div>
 </template>

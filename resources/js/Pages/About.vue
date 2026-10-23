@@ -1,10 +1,11 @@
 <script setup>
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import { Head } from '@inertiajs/vue3'
 import { usePage } from '@inertiajs/vue3'
 
 const page = usePage()
 const locale = computed(() => page.props.locale ?? 'en')
+const mobileMenuOpen = ref(false)
 
 const translations = {
     en: {
@@ -140,40 +141,49 @@ const languages = [
         <link rel="alternate" hreflang="x-default" :href="`https://daveasolutions.com/en${pageSlug}`" />
     </Head>
     <div class="min-h-screen overflow-hidden bg-[#07111f] text-white">
-        <header class="sticky top-0 z-30 border-b border-white/10 bg-[#07111f]/90 backdrop-blur-xl">
-            <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-8">
-                <a :href="`/${locale}`" class="group flex items-center gap-3">
-                    <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-blue-400 via-blue-500 to-indigo-600 text-white shadow-lg shadow-blue-500/30 transition duration-300 group-hover:-rotate-3 group-hover:shadow-blue-400/40">
-                        <img
-                            src="/davea-icon-512.png"
-                            alt="DAVEA Solutions"
-                            class="h-8 w-8 object-contain"
-                        />
+        <header class="sticky top-0 z-30 border-b border-white/10 bg-[#07111f]/95 backdrop-blur-xl">
+            <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
+                <a :href="`/${locale}`" class="group flex items-center gap-3" @click="mobileMenuOpen = false">
+                    <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-blue-400 via-blue-500 to-indigo-600 text-white shadow-lg shadow-blue-500/30 transition duration-300 group-hover:-rotate-3">
+                        <img src="/davea-icon-512.png" alt="DAVEA Solutions" class="h-8 w-8 object-contain" />
                     </span>
                     <span class="text-lg font-black tracking-tight">DAVEA<span class="text-blue-400">.</span> <span class="text-slate-300">Solutions</span></span>
                 </a>
 
-                <div class="flex items-center gap-3">
-                    <div class="flex items-center gap-1 rounded-xl border border-white/10 bg-white/5 p-1">
-                        <a
-                            v-for="language in languages"
-                            :key="language.code"
-                            :href="`/${language.code}/about`"
-                            :class="[
-                                'rounded-lg px-2.5 py-1.5 text-[11px] font-black transition',
-                                locale === language.code ? 'bg-blue-500 text-white shadow-lg shadow-blue-500/20' : 'text-slate-400 hover:text-white'
-                            ]"
-                        >
-                            {{ language.label }}
-                        </a>
+                <nav class="hidden items-center gap-6 lg:flex">
+                    <a :href="`/${locale}`" @click="mobileMenuOpen = false" class="text-sm font-bold text-slate-300 transition hover:text-white">{{ locale === 'ro' ? 'Acasă' : locale === 'de' ? 'Startseite' : locale === 'es' ? 'Inicio' : 'Home' }}</a>
+<a :href="`/${locale}/services`" @click="mobileMenuOpen = false" class="text-sm font-bold text-slate-300 transition hover:text-white">{{ locale === 'ro' ? 'Servicii' : locale === 'de' ? 'Leistungen' : locale === 'es' ? 'Servicios' : 'Services' }}</a>
+<a :href="`/${locale}/process`" @click="mobileMenuOpen = false" class="text-sm font-bold text-slate-300 transition hover:text-white">{{ locale === 'ro' ? 'Proces' : locale === 'de' ? 'Ablauf' : locale === 'es' ? 'Proceso' : 'Process' }}</a>
+<a :href="`/${locale}/portfolio`" @click="mobileMenuOpen = false" class="text-sm font-bold text-slate-300 transition hover:text-white">{{ locale === 'ro' ? 'Portofoliu' : locale === 'de' ? 'Projekte' : locale === 'es' ? 'Portafolio' : 'Portfolio' }}</a>
+<a :href="`/${locale}/about`" @click="mobileMenuOpen = false" class="text-sm font-bold text-slate-300 transition hover:text-white">{{ locale === 'ro' ? 'Despre' : locale === 'de' ? 'Über uns' : locale === 'es' ? 'Sobre nosotros' : 'About' }}</a>
+<a :href="`/${locale}/contact`" @click="mobileMenuOpen = false" class="text-sm font-bold text-slate-300 transition hover:text-white">{{ locale === 'ro' ? 'Contact' : locale === 'de' ? 'Kontakt' : locale === 'es' ? 'Contacto' : 'Contact' }}</a>
+                </nav>
+
+                <div class="flex items-center gap-2">
+                    <div class="hidden items-center gap-1 rounded-xl border border-white/10 bg-white/5 p-1 sm:flex">
+                        <a v-for="language in languages" :key="language.code" :href="`/${language.code}/about`" :class="['rounded-lg px-2.5 py-1.5 text-[11px] font-black transition', locale === language.code ? 'bg-blue-500 text-white shadow-lg shadow-blue-500/20' : 'text-slate-400 hover:text-white']">{ language.label }</a>
                     </div>
-                    <a
-                        :href="`/${locale}`"
-                        class="hidden rounded-xl border border-white/15 px-5 py-3 text-sm font-black text-slate-200 transition hover:border-blue-400 hover:text-white sm:block"
-                    >
-                        {{ content.back }}
-                    </a>
+                    <a :href="`/${locale}/contact`" class="hidden rounded-xl bg-blue-500 px-4 py-2.5 text-sm font-black text-white shadow-lg shadow-blue-500/20 transition hover:bg-blue-400 sm:inline-flex">{{ locale === 'ro' ? 'Discută proiectul' : locale === 'de' ? 'Projekt besprechen' : locale === 'es' ? 'Habla sobre tu proyecto' : 'Discuss your project' }}</a>
+                    <button type="button" class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-slate-200 transition hover:border-blue-400 hover:text-white lg:hidden" :aria-expanded="mobileMenuOpen" aria-label="Open navigation menu" @click="mobileMenuOpen = !mobileMenuOpen">
+                        <svg v-if="!mobileMenuOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                        <svg v-else xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+                    </button>
                 </div>
+            </div>
+
+            <div v-if="mobileMenuOpen" class="border-t border-white/10 bg-[#07111f] px-6 py-4 lg:hidden">
+                <nav class="mx-auto max-w-7xl space-y-1">
+                    <a :href="`/${locale}`" @click="mobileMenuOpen = false" class="block rounded-xl px-4 py-3 text-sm font-black text-slate-200 transition hover:bg-white/10 hover:text-white">{{ locale === 'ro' ? 'Acasă' : locale === 'de' ? 'Startseite' : locale === 'es' ? 'Inicio' : 'Home' }}</a>
+<a :href="`/${locale}/services`" @click="mobileMenuOpen = false" class="block rounded-xl px-4 py-3 text-sm font-black text-slate-200 transition hover:bg-white/10 hover:text-white">{{ locale === 'ro' ? 'Servicii' : locale === 'de' ? 'Leistungen' : locale === 'es' ? 'Servicios' : 'Services' }}</a>
+<a :href="`/${locale}/process`" @click="mobileMenuOpen = false" class="block rounded-xl px-4 py-3 text-sm font-black text-slate-200 transition hover:bg-white/10 hover:text-white">{{ locale === 'ro' ? 'Proces' : locale === 'de' ? 'Ablauf' : locale === 'es' ? 'Proceso' : 'Process' }}</a>
+<a :href="`/${locale}/portfolio`" @click="mobileMenuOpen = false" class="block rounded-xl px-4 py-3 text-sm font-black text-slate-200 transition hover:bg-white/10 hover:text-white">{{ locale === 'ro' ? 'Portofoliu' : locale === 'de' ? 'Projekte' : locale === 'es' ? 'Portafolio' : 'Portfolio' }}</a>
+<a :href="`/${locale}/about`" @click="mobileMenuOpen = false" class="block rounded-xl px-4 py-3 text-sm font-black text-slate-200 transition hover:bg-white/10 hover:text-white">{{ locale === 'ro' ? 'Despre' : locale === 'de' ? 'Über uns' : locale === 'es' ? 'Sobre nosotros' : 'About' }}</a>
+<a :href="`/${locale}/contact`" @click="mobileMenuOpen = false" class="block rounded-xl px-4 py-3 text-sm font-black text-slate-200 transition hover:bg-white/10 hover:text-white">{{ locale === 'ro' ? 'Contact' : locale === 'de' ? 'Kontakt' : locale === 'es' ? 'Contacto' : 'Contact' }}</a>
+                    <a :href="`/${locale}/contact`" @click="mobileMenuOpen = false" class="mt-3 block rounded-xl bg-blue-500 px-4 py-3 text-center text-sm font-black text-white shadow-lg shadow-blue-500/20">{{ locale === 'ro' ? 'Discută proiectul' : locale === 'de' ? 'Projekt besprechen' : locale === 'es' ? 'Habla sobre tu proyecto' : 'Discuss your project' }}</a>
+                    <div class="mt-4 flex gap-2 border-t border-white/10 pt-4">
+                        <a v-for="language in languages" :key="`mobile-${language.code}`" :href="`/${language.code}/about`" class="rounded-lg border border-white/10 px-3 py-2 text-xs font-black text-slate-300 transition hover:border-blue-400 hover:text-white">{ language.label }</a>
+                    </div>
+                </nav>
             </div>
         </header>
 
@@ -276,7 +286,7 @@ const languages = [
 
                         <span class="text-slate-600">|</span>
 
-                        <a href="mailto:contact@davea.ro" class="transition hover:text-white">contact@davea.ro</a>
+                        <a href="mailto:contact@daveasolutions.com" class="transition hover:text-white">contact@daveasolutions.com</a>
                     </div>
                 </div>
 

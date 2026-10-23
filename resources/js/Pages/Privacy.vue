@@ -12,7 +12,7 @@ const translations = {
         intro: 'This Privacy Policy explains how personal data is collected and used when you contact DAVEA Solutions through this website.',
         operatorTitle: '1. Data controller',
         operator: 'Data controller: Stoean Dragos, operating under the public brand DAVEA Solutions.',
-        contact: 'Contact email: contact@davea.ro',
+        contact: 'Contact email: contact@daveasolutions.com',
         website: 'Website: https://daveasolutions.com',
         collectTitle: '2. Data we may collect',
         collectText: 'When you use the contact form, we may collect your name, email address, phone number and the content of your message. We may also receive technical information necessary to keep the website secure and functional.',
@@ -25,7 +25,7 @@ const translations = {
         sharingTitle: '6. Data sharing',
         sharingText: 'We do not sell your personal data. Information may be processed by hosting, email or technical service providers only when necessary to operate the website and respond to your request.',
         rightsTitle: '7. Your rights',
-        rightsText: 'Depending on applicable law, you may request access, correction, deletion, restriction of processing or object to processing. You may also request a copy of the data you provided. Contact us at contact@davea.ro.',
+        rightsText: 'Depending on applicable law, you may request access, correction, deletion, restriction of processing or object to processing. You may also request a copy of the data you provided. Contact us at contact@daveasolutions.com.',
         cookiesTitle: '8. Cookies and technical storage',
         cookiesText: 'The website may use necessary cookies or browser storage for functionality, security, preferences and session management. Optional analytics or marketing tools will not be added without appropriate notice and consent where required.',
         securityTitle: '9. Security',
@@ -41,7 +41,7 @@ const translations = {
         intro: 'Această politică explică modul în care sunt colectate și utilizate datele personale atunci când contactezi DAVEA Solutions prin intermediul acestui website.',
         operatorTitle: '1. Operatorul datelor',
         operator: 'Operatorul datelor: Stoean Dragos, care desfășoară activitatea sub brandul public DAVEA Solutions.',
-        contact: 'E-mail de contact: contact@davea.ro',
+        contact: 'E-mail de contact: contact@daveasolutions.com',
         website: 'Website: https://daveasolutions.com',
         collectTitle: '2. Datele pe care le putem colecta',
         collectText: 'Atunci când folosești formularul de contact, putem colecta numele, adresa de e-mail, numărul de telefon și conținutul mesajului. Putem primi și informații tehnice necesare pentru menținerea securității și funcționării website-ului.',
@@ -54,7 +54,7 @@ const translations = {
         sharingTitle: '6. Transmiterea datelor',
         sharingText: 'Nu vindem datele personale. Informațiile pot fi procesate de furnizori de hosting, e-mail sau servicii tehnice doar atunci când este necesar pentru funcționarea website-ului și răspunsul la solicitare.',
         rightsTitle: '7. Drepturile tale',
-        rightsText: 'În funcție de legislația aplicabilă, poți solicita accesul, corectarea, ștergerea, restricționarea prelucrării sau te poți opune prelucrării. Poți solicita și o copie a datelor transmise. Ne poți contacta la contact@davea.ro.',
+        rightsText: 'În funcție de legislația aplicabilă, poți solicita accesul, corectarea, ștergerea, restricționarea prelucrării sau te poți opune prelucrării. Poți solicita și o copie a datelor transmise. Ne poți contacta la contact@daveasolutions.com.',
         cookiesTitle: '8. Cookie-uri și stocare tehnică',
         cookiesText: 'Website-ul poate folosi cookie-uri necesare sau stocare în browser pentru funcționalitate, securitate, preferințe și gestionarea sesiunii. Instrumentele opționale de analiză sau marketing nu vor fi adăugate fără informare și consimțământ, atunci când acestea sunt necesare.',
         securityTitle: '9. Securitatea datelor',
@@ -70,7 +70,7 @@ const translations = {
         intro: 'Diese Datenschutzerklärung erklärt, wie personenbezogene Daten verarbeitet werden, wenn Sie DAVEA Solutions über diese Website kontaktieren.',
         operatorTitle: '1. Verantwortlicher',
         operator: 'Verantwortlicher: Stoean Dragos, tätig unter der öffentlichen Marke DAVEA Solutions.',
-        contact: 'Kontakt: contact@davea.ro',
+        contact: 'Kontakt: contact@daveasolutions.com',
         website: 'Website: https://daveasolutions.com',
         collectTitle: '2. Erhobene Daten',
         collectText: 'Über das Kontaktformular können Name, E-Mail-Adresse, Telefonnummer und der Inhalt Ihrer Nachricht erhoben werden. Zusätzlich können technische Informationen zur Sicherheit und Funktion der Website verarbeitet werden.',
@@ -83,7 +83,7 @@ const translations = {
         sharingTitle: '6. Weitergabe',
         sharingText: 'Wir verkaufen keine personenbezogenen Daten. Eine Verarbeitung durch Hosting-, E-Mail- oder technische Dienstleister erfolgt nur, soweit dies für den Betrieb der Website erforderlich ist.',
         rightsTitle: '7. Ihre Rechte',
-        rightsText: 'Sie können je nach anwendbarem Recht Auskunft, Berichtigung, Löschung oder Einschränkung der Verarbeitung verlangen oder der Verarbeitung widersprechen. Kontakt: contact@davea.ro.',
+        rightsText: 'Sie können je nach anwendbarem Recht Auskunft, Berichtigung, Löschung oder Einschränkung der Verarbeitung verlangen oder der Verarbeitung widersprechen. Kontakt: contact@daveasolutions.com.',
         cookiesTitle: '8. Cookies und technische Speicherung',
         cookiesText: 'Die Website kann notwendige Cookies oder Browser-Speicher für Funktionalität, Sicherheit, Einstellungen und Sitzungen verwenden. Optionale Analyse- oder Marketingdienste werden nur mit entsprechender Information und, falls erforderlich, Einwilligung eingesetzt.',
         securityTitle: '9. Sicherheit',
@@ -99,7 +99,7 @@ const translations = {
         intro: 'Esta política explica cómo se recopilan y utilizan los datos personales cuando contactas con DAVEA Solutions a través de este sitio web.',
         operatorTitle: '1. Responsable del tratamiento',
         operator: 'Responsable: Stoean Dragos, que opera bajo la marca pública DAVEA Solutions.',
-        contact: 'Contacto: contact@davea.ro',
+        contact: 'Contacto: contact@daveasolutions.com',
         website: 'Sitio web: https://daveasolutions.com',
         collectTitle: '2. Datos que podemos recopilar',
         collectText: 'Al utilizar el formulario de contacto podemos recopilar tu nombre, correo electrónico, teléfono y el contenido del mensaje. También podemos procesar información técnica necesaria para mantener el sitio seguro y funcional.',
@@ -112,7 +112,7 @@ const translations = {
         sharingTitle: '6. Comunicación de datos',
         sharingText: 'No vendemos datos personales. Los proveedores de alojamiento, correo electrónico o servicios técnicos solo pueden procesar información cuando sea necesario para operar el sitio y responder a tu solicitud.',
         rightsTitle: '7. Tus derechos',
-        rightsText: 'Puedes solicitar acceso, rectificación, eliminación o limitación del tratamiento y oponerte al mismo, según la legislación aplicable. Contacto: contact@davea.ro.',
+        rightsText: 'Puedes solicitar acceso, rectificación, eliminación o limitación del tratamiento y oponerte al mismo, según la legislación aplicable. Contacto: contact@daveasolutions.com.',
         cookiesTitle: '8. Cookies y almacenamiento técnico',
         cookiesText: 'El sitio puede utilizar cookies necesarias o almacenamiento del navegador para funciones, seguridad, preferencias y sesiones. Las herramientas opcionales de análisis o marketing solo se añadirán con la información y el consentimiento necesarios.',
         securityTitle: '9. Seguridad',
@@ -281,10 +281,10 @@ const languages = [
                         <span class="text-slate-600">|</span>
 
                         <a
-                            href="mailto:contact@davea.ro"
+                            href="mailto:contact@daveasolutions.com"
                             class="transition hover:text-white"
                         >
-                            contact@davea.ro
+                            contact@daveasolutions.com
                         </a>
                     </div>
                 </div>

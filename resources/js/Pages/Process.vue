@@ -427,7 +427,8 @@ const languages = [
 
                 <div class="flex items-center gap-2">
                     <div class="hidden items-center gap-1 rounded-xl border border-white/10 bg-white/5 p-1 sm:flex">
-                        <a v-for="language in languages" :key="language.code" :href="`/${language.code}/process`" :class="['rounded-lg px-2.5 py-1.5 text-[11px] font-black transition', locale === language.code ? 'bg-blue-500 text-white shadow-lg shadow-blue-500/20' : 'text-slate-400 hover:text-white']">{ language.label }</a>
+                        <a v-for="language in languages" :key="language.code" :href="`/${language.code}/process`" :class="['rounded-lg px-2.5 py-1.5 text-[11px] font-black transition', locale === language.code ? 'bg-blue-500 text-white shadow-lg shadow-blue-500/20' : 'text-slate-400 hover:text-white']">{{ language.label }}
+</a>
                     </div>
                     <a :href="`/${locale}/contact`" class="hidden rounded-xl bg-blue-500 px-4 py-2.5 text-sm font-black text-white shadow-lg shadow-blue-500/20 transition hover:bg-blue-400 sm:inline-flex">{{ locale === 'ro' ? 'Discută proiectul' : locale === 'de' ? 'Projekt besprechen' : locale === 'es' ? 'Habla sobre tu proyecto' : 'Discuss your project' }}</a>
                     <button type="button" class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-slate-200 transition hover:border-blue-400 hover:text-white lg:hidden" :aria-expanded="mobileMenuOpen" aria-label="Open navigation menu" @click="mobileMenuOpen = !mobileMenuOpen">
@@ -447,7 +448,8 @@ const languages = [
 <a :href="`/${locale}/contact`" @click="mobileMenuOpen = false" class="block rounded-xl px-4 py-3 text-sm font-black text-slate-200 transition hover:bg-white/10 hover:text-white">{{ locale === 'ro' ? 'Contact' : locale === 'de' ? 'Kontakt' : locale === 'es' ? 'Contacto' : 'Contact' }}</a>
                     <a :href="`/${locale}/contact`" @click="mobileMenuOpen = false" class="mt-3 block rounded-xl bg-blue-500 px-4 py-3 text-center text-sm font-black text-white shadow-lg shadow-blue-500/20">{{ locale === 'ro' ? 'Discută proiectul' : locale === 'de' ? 'Projekt besprechen' : locale === 'es' ? 'Habla sobre tu proyecto' : 'Discuss your project' }}</a>
                     <div class="mt-4 flex gap-2 border-t border-white/10 pt-4">
-                        <a v-for="language in languages" :key="`mobile-${language.code}`" :href="`/${language.code}/process`" class="rounded-lg border border-white/10 px-3 py-2 text-xs font-black text-slate-300 transition hover:border-blue-400 hover:text-white">{ language.label }</a>
+                        <a v-for="language in languages" :key="`mobile-${language.code}`" :href="`/${language.code}/process`" class="rounded-lg border border-white/10 px-3 py-2 text-xs font-black text-slate-300 transition hover:border-blue-400 hover:text-white">{{ language.label }}
+</a>
                     </div>
                 </nav>
             </div>
